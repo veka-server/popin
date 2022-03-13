@@ -1,0 +1,21 @@
+{
+    "name": "veka-server/popin",
+    "description": "plugin js popin pour ma librairie",
+    "license": "MIT",
+    "keywords": ["minimalist", "popin", "js", "jquery"],
+    "authors": [
+        {
+            "name": "Vanhaezebrouck Nicolas",
+            "email": "contact@veka-server.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "VekaServer\\Popin\\" : "src/php/"
+        }
+    },
+    "require": {
+        "veka-server/abstract": "^0.0.3",
+        "veka-server/jquery": "^0.0.4"
+    }
+}

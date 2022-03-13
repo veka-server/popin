@@ -10,11 +10,11 @@ class Autoload
     }
 
     public static function getPathJS(){
-        return dirname(__DIR__).DIRECTORY_SEPARATOR.'js';
+        return [dirname(__DIR__).DIRECTORY_SEPARATOR.'js'];
     }
 
     public static function getPathCSS(){
-        return dirname(__DIR__).DIRECTORY_SEPARATOR.'css';
+        return [dirname(__DIR__).DIRECTORY_SEPARATOR.'css'];
     }
 
 }

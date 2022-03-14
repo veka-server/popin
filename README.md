@@ -1,7 +1,7 @@
 # popin
-plugin js popin pour ma librairie
+plugin JQUERY popin pour ma librairie
 
-## install
+# install
 
 ```
 composer require veka-server/popin
@@ -17,4 +17,22 @@ Ajouter les traductions au chargement de la page
 ```js
 Popin.btn_valider = {{ "valider" | lang | json_encode | raw }};
 Popin.btn_annuler = {{ "annuler" | lang | json_encode | raw }};
+```
+# utilisation
+```js
+Popin.alert(content, titre);
+
+Popin.confirm(content, titre, function(){
+    // success
+}, function(){
+    // cancel
+});
+
+Popin.dialog(content, titre, function(){
+    // success
+}, function(){
+    // cancel
+}, function(){
+    // close 
+});
 ```

@@ -7,7 +7,7 @@ plugin JQUERY popin pour ma librairie
 composer require veka-server/popin
 ```
 
-Informer le framework que la lib est presente en exditant le fichier config/plugin.php
+Informer le framework que la lib est presente en editant le fichier config/plugin.php
 ```php
 // ajouter la ligne dans le tableau retourné par le fichier
 \VekaServer\Popin\Autoload::class

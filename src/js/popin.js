@@ -13,12 +13,15 @@ class Popin {
         '            </div>\n' +
         '            <div class="content"></div>\n' +
         '            <div class="footer no-copy">\n' +
-        '                <button class="button orange cancel">{{ "annuler" | lang }}</button>\n' +
-        '                <button class="button vert valid">{{ "valider" | lang }}</button>\n' +
+        '                <button class="button orange cancel"></button>\n' +
+        '                <button class="button vert valid"></button>\n' +
         '            </div>\n' +
         '        </div>\n' +
         '    </div>\n' +
         '</div>';
+
+    static btn_valider;
+    static btn_annuler;
 
     constructor() {
         this.html = '';
@@ -43,6 +46,8 @@ class Popin {
 
     setContent = function(content){
         this.html.find('.background_popup_main .content').html(content);
+        this.html.find('.background_popup_main .footer .valid').html(this.btn_valider);
+        this.html.find('.background_popup_main .footer .cancel').html(this.btn_annuler);
         return this;
     }
 

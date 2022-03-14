@@ -20,8 +20,8 @@ class Popin {
         '    </div>\n' +
         '</div>';
 
-    static btn_valider;
-    static btn_annuler;
+    static btn_valider = 'valid';
+    static btn_annuler = 'cancel';
 
     constructor() {
         this.html = '';
@@ -46,8 +46,8 @@ class Popin {
 
     setContent = function(content){
         this.html.find('.background_popup_main .content').html(content);
-        this.html.find('.background_popup_main .footer .valid').html(this.btn_valider);
-        this.html.find('.background_popup_main .footer .cancel').html(this.btn_annuler);
+        this.html.find('.background_popup_main .footer .valid').html(Popin.btn_valider);
+        this.html.find('.background_popup_main .footer .cancel').html(Popin.btn_annuler);
         return this;
     }
 

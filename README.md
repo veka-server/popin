@@ -21,13 +21,15 @@ Popin.btn_annuler = {{ "annuler" | lang | json_encode | raw }};
 # utilisation
 ```js
 Popin.alert(content, titre);
-
+```
+```js
 Popin.confirm(content, titre, function(){
     // success
 }, function(){
     // cancel
 });
-
+```
+```js
 Popin.dialog(content, titre, function(){
     // success
 }, function(){

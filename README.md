@@ -1,2 +1,20 @@
-# popipn
+# popin
 plugin js popin pour ma librairie
+
+## install
+
+```
+composer require veka-server/popin
+```
+
+Informer le framework que la lib est presente en exditant le fichier config/plugin.php
+```php
+// ajouter la ligne dans le tableau retourné par le fichier
+\VekaServer\Popin\Autoload::class
+```
+
+Ajouter les traductions au chargement de la page
+```js
+Popin.btn_valider = {{ "valider" | lang | json_encode | raw }};
+Popin.btn_annuler = {{ "annuler" | lang | json_encode | raw }};
+```

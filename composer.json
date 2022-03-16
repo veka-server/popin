@@ -16,6 +16,7 @@
     },
     "require": {
         "veka-server/abstract": "^0.0.4",
-        "veka-server/jquery": "^0.0.4"
+        "veka-server/jquery": "^0.0.4",
+        "veka-server/fontawesome": "^0.0.2"
     }
 }

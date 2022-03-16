@@ -2,11 +2,17 @@
 
 namespace VekaServer\Popin;
 
-class Autoload
+use VekaServer\Abstract\PluginAbstract;
+
+class Autoload extends PluginAbstract
 {
 
-    public static function getPathView(){
+    protected static function getAllRequiredPlugin():array {
         return [\VekaServer\Jquery\Autoload::class, \VekaServer\FontAwesome\Autoload::class];
+    }
+    
+    public static function getPathView(){
+        return [];
     }
 
     public static function getPathJS(){

@@ -18,6 +18,12 @@ Ajouter les traductions au chargement de la page
 Popin.btn_valider = {{ "valider" | lang | json_encode | raw }};
 Popin.btn_annuler = {{ "annuler" | lang | json_encode | raw }};
 ```
+
+Ajouter la route de fontawesome => veka-server/fontawesome
+```
+Consulter le readme de veka-server/fontawesome
+```
+
 # utilisation
 ```js
 Popin.alert(content, titre);

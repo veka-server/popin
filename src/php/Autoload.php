@@ -11,15 +11,15 @@ class Autoload extends PluginAbstract
         return [\VekaServer\Jquery\Autoload::class, \VekaServer\FontAwesome\Autoload::class];
     }
     
-    public static function getPathView(){
+    public static function getPathView():array {
         return [];
     }
 
-    public static function getPathJS(){
+    public static function getPathJS():array {
         return [dirname(__DIR__).DIRECTORY_SEPARATOR.'js'];
     }
 
-    public static function getPathCSS(){
+    public static function getPathCSS():array {
         return [dirname(__DIR__).DIRECTORY_SEPARATOR.'css'];
     }
 

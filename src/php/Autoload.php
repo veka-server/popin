@@ -6,7 +6,7 @@ class Autoload
 {
 
     public static function getPathView(){
-        return [];
+        return [\VekaServer\Jquery\Autoload::class, \VekaServer\FontAwesome\Autoload::class];
     }
 
     public static function getPathJS(){
